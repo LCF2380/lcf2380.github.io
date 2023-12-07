@@ -1,0 +1,96 @@
+<!--Mahan Timalsena
+Student Number: C0902945-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>She Walks</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital@1&family=Roboto&family=Roboto+Slab:wght@300&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <main>
+    <div class="container">
+    <header>
+    <!-- logo- section -->
+    <a href="index.html"><img class = "logo" id="main-logo" src="images/logo.png">  
+        <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="contact.html">Contact Us</a>
+    
+                </div>
+    
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div> 
+                </a>
+            </nav>
+            <nav class="tablet-desktop" >
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="specials.html">Specials</a></li>
+                  <li><a href="training.html">Training</a></li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <h2 class="section-header">Media</h2>
+    <h2 class="text-blk heading1">Walk With Us</h2>
+
+    <div id="media-container">
+        <video controls poster="images/hero-image.jpg">
+            <source src="media/ffc_video.mp4" type="video/mp4">
+            <source src="media/ffc_video.webm" type="video/webm">
+            <track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+            <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+            <p>Your browser does not support the video element.</p>
+        </video>
+        <h2 class="text-blk heading1">Listen To Testimonials</h2>
+
+        <div style="display: flex;justify-content: space-around;padding: 0.3em; padding-bottom: 1em;">
+
+            <audio id="music" controls>
+                <source id="music-src" src="media/audio1.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>    
+            <audio id="music" controls>
+                <source id="music-src" src="media/audio2.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>  
+            <audio id="music" controls>
+                <source id="music-src" src="media/audio3.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>  <audio id="music" controls>
+                <source id="music-src" src="media/audio4.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>  
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; Copyright 2099. All Rights Reserved. <a href="mailto:info@shewalks.com">Request information</a>
+        Mahan Timalsena &nbsp; &nbsp; C0902945
+    </footer>
+
+</div>  
+</main>
+<script src="scripts/script.js"></script> 
+
+</body>
+</html>

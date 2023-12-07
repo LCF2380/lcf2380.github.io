@@ -1,0 +1,43 @@
+
+   /* Styles for weekly sales and products */
+
+
+
+.weekly-sales {
+    text-align: center;
+    padding: 20px;
+}
+
+.product {
+    display: inline-block;
+    margin: 20px;
+    padding: 0.2em;
+    width: 40%;
+    text-align: center;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.product img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+}
+
+#customer_gurantee{
+    background-color: #333;
+    color: rgb(224, 220, 220);
+    padding: 0.2em;
+    text-align: center;
+}

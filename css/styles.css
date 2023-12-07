@@ -1,0 +1,372 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ 
+
+
+/* Styles for Container*/
+
+  
+/* styles for Header */
+  
+/* styles for Header */
+header {
+  background-color: #333; 
+  margin-bottom: 3px; 
+  color: #fff; 
+  align-items: center;
+  position:sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1;
+}
+
+/* logo part */
+
+.logo{
+  display: inline ;
+  width: 130px; /* Set the width of the logo */
+  height: auto;
+  margin-left: 40px;
+
+}
+
+
+
+
+/* styles image of header */
+header img{
+  text-align: left;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* Styles for Nav */
+
+nav {
+  z-index: 1;
+}
+nav ul{
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+
+}
+nav ul li{
+margin-right: 16px;
+
+}
+nav ul li a{
+color: #f2f2f2;
+padding: 1px 10px;
+margin-left: 10px;
+border-radius: 5px;
+letter-spacing: 1px;
+text-decoration: none;
+font-size: 15px;
+font-weight: 500;
+transition: all 0.3s ease;
+justify-content: center;
+
+}
+nav ul li a.active,
+nav ul li a:hover{
+color: #111;
+background: rgb(255, 255, 255);
+}
+
+
+.image-container {
+  position: relative;
+  width: 80vw;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 0px 0px 15px 5px gray;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.image-container img {
+    max-width: 100%;
+    width: 80vw;
+}
+
+.text-overlay {
+    width:100%;
+    max-width: inherit;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.867);
+}
+
+.text-overlay h2{
+  margin-top: 35%;
+  font-size: 5em;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.text-overlay h3{
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.text-overlay button{
+    padding-top: 17px;
+    padding-right: 40px;
+    padding-bottom: 17px;
+    padding-left: 40px;
+  color:whitesmoke;
+  background-color: rgb(244, 152, 146);
+  box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
+  border-width:0;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 5px 2px gray;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.text-overlay button:hover{
+  transform: scale3d(1.1,1.1,1);
+  
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 2em;
+  padding: 40px 0;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  background-color: #ebb7b7;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 2em;
+}
+
+
+
+
+   /* Styles for footer */
+   footer {
+    text-align: center; 
+    font-size: 15px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: #333; 
+    color: #fff; 
+    border-top: 2px solid #555; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  footer a {
+    text-decoration: underline; 
+    color: #fff; 
+  }
+  
+  footer a:hover {
+    text-decoration: underline; 
+  }
+  
+  .text-blk{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+    padding-top: 0px;
+  
+  }
+
+  .text-blk.heading {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  
+  .text-blk.heading1{
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 450;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+  
+  .text-blk.subHeading {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+   
+  }
+
+  
+/* Style hamburger menu */
+.mobile-nav{
+  background-color: #333;
+}
+.mobile-nav a {
+  color: #fff;
+  font-family: 'Francois One', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.menu-icon {
+  display: block;
+  position: absolute; 
+  right: 0;
+  top: 0;
+  color: #fff;
+}
+
+
+    /* Show mobile class, hide tablet-desktop class and menu-links id */
+.mobile{
+  display: block;
+}
+
+.tablet-desktop, #menu-links{
+  display: none;
+}
+
+.mainImg{
+  display: none;
+}
+  
+  /* Media Query for Tablet Viewport */
+  @media screen and (min-width: 630px), print {
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+    /* Tablet Viewport: Style rule for header */
+  header {
+    padding-bottom: 2%;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  /* style rules for navigation area */
+  nav {
+    background-color: #333; 
+    text-align: center; 
+    padding: 1%;
+    margin-bottom: 1%; 
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 5em;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline;
+    padding:0em 0.5em;
+    font-size: 1.15em;
+    font-family: 'Francois One', sans-serif;
+    border-right: 2px solid #fff;
+  }
+
+  nav li:last-child{
+    border-right: none;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.1em 0.5em;
+    font-size: 1em;
+    font-weight: lighter;
+    font-family: ui-rounded;
+  }
+
+  .mainImg{
+    display: block;
+  }
+  header {
+    background-color: #333; 
+    margin-bottom: 3px; 
+    color: #fff; 
+    padding: 0.em; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1;
+  }
+  }
+
+  /* Media query for Desktop viewport */
+@media screen and (min-width: 1015px), print {
+    
+  /* Desktop Viewport: Style rule header */
+  header {
+      padding-bottom: 0;
+  }
+  
+  /* Desktop Viewport: Style rules for nav area */
+  nav {
+    background-color: #333; 
+    text-align: center; 
+    padding: 0.2em;
+    margin-bottom: 1%; 
+  }
+  
+ nav ul {
+    list-style-type: none;
+    margin-top: 4em;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 5px;
+    font-family: 'Francois One', sans-serif;
+    border: none;
+    font-size: large;
+}
+  
+  nav li a {
+    text-decoration: none;
+    color: #fff; 
+  }
+  
+  nav li a:hover {
+    color: #000;
+    background-color: #fff;
+    transform: scale(1.3);
+}
+
+.mobile-nav{
+  display: none;
+}
+.mainImg{
+display: block;
+}
+
+
+}
+
+
+
+  
+
